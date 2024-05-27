@@ -1,15 +1,14 @@
 Summary:	Tesseract-based OCR plugin for Vapoursynth
 Summary(pl.UTF-8):	Oparta na Tesserakcie wtyczka OCR dla programu Vapoursynth
 Name:		vapoursynth-plugin-ocr
-Version:	1
+Version:	3
 Release:	1
 # it was vapoursynth.spec subpackage up to 54
 Epoch:		1
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/vapoursynth/vs-ocr/archive/R%{version}/vs-ocr-R%{version}.tar.gz
-# Source0-md5:	108bc131d6b94479f3dc93033af7478e
-Patch0:		vs-ocr-meson.patch
+# Source0-md5:	2372d12d4c7061258709106cf64c6881
 URL:		https://github.com/vapoursynth/vs-ocr
 BuildRequires:	meson
 BuildRequires:	ninja >= 1.5
@@ -28,7 +27,6 @@ klatkach obrazu.
 
 %prep
 %setup -q -n vs-ocr-R%{version}
-%patch0 -p1
 
 %build
 %meson build
