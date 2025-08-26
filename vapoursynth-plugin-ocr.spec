@@ -12,6 +12,7 @@ Source0:	https://github.com/vapoursynth/vs-ocr/archive/R%{version}/vs-ocr-R%{ver
 URL:		https://github.com/vapoursynth/vs-ocr
 BuildRequires:	meson
 BuildRequires:	ninja >= 1.5
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	vapoursynth-devel >= 55
 BuildRequires:	tesseract-devel >= 4.1.1
 Requires:	vapoursynth >= 55
